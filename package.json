@@ -1,0 +1,37 @@
+{
+  "name": "semvar-publish-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version",
+    "local-publish": "GITHUB_TOKEN=1be995cc3ff9edd8ab7e235d54d148f7cbbecc6c semantic-release --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewmtam/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewmtam/test/issues"
+  },
+  "homepage": "https://github.com/andrewmtam/test#readme",
+  "dependencies": {
+    "semantic-release": "^17.2.2",
+    "stream-buffers": "^3.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@semantic-release/exec": "^5.0.0",
+    "husky": "^4.3.0",
+    "standard-version": "^9.0.0"
+  },
+  "standard-version": {
+    "skip": {
+      "tag": true
+    }
+  }
+}
